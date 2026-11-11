@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f3b">
+  <meta name="description" content="Tell The Motley Guide about your vacation plans and request a personalized quote.">
+  <title>Request a Vacation Quote | The Motley Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="travel-pages.css">
+</head>
+<body>
+  <header><div class="wrap nav"><a class="brand" href="index.html"><img src="https://d6ham14n5a27z.cloudfront.net/img/s_h100/i_ha0764b0eef81c5c4796b85fe0e1fa16772dd50e7.png" alt=""><span class="brand-name">The Motley Guide<span>Travel, made personal</span></span></a><nav><a href="index.html#experiences">Explore</a><a href="index.html#virgin">Virgin Voyages</a><a href="cruise-faq.html">FAQs</a><a href="index.html#about">About Edward</a></nav></div></header>
+  <main>
+    <section class="quote-hero"><div class="wrap"><a class="breadcrumb" style="color:var(--teal);margin:0" href="index.html">← Back to The Motley Guide</a><div class="eyebrow" style="margin-top:20px">Start planning</div><h1>Request a vacation quote</h1><p>Share a few details about your trip. I’ll use them to start exploring options that fit your plans and budget.</p></div></section>
+    <section class="quote-shell"><div class="wrap"><form class="quote-form" name="vacation-quote-request" method="POST" action="/quote-thank-you" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+      <input type="hidden" name="form-name" value="vacation-quote-request">
+      <input type="hidden" name="subject" value="New vacation quote request — The Motley Guide">
+      <p class="quote-honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="quote-grid">
+        <div class="quote-field"><label for="full-name">Full legal name <span aria-hidden="true">*</span></label><input id="full-name" name="full-name" type="text" autocomplete="name" required></div>
+        <div class="quote-field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="quote-field"><label for="vacation-type">Vacation type <span aria-hidden="true">*</span></label><select id="vacation-type" name="vacation-type" required><option value="" selected disabled>Select a vacation type</option><option>Cruise</option><option>Guided Vacation</option><option>All-Inclusive Resort</option><option>Hotel Stay</option><option>Excursion</option><option>Disney Vacation</option><option>Other</option></select></div>
+        <div class="quote-field"><label for="preferred-partner">Preferred cruise line, destination, or resort</label><input id="preferred-partner" name="preferred-partner" type="text" placeholder="Share any places or partners in mind"></div>
+        <div class="quote-field"><label for="travelers">Number of travelers <span aria-hidden="true">*</span></label><input id="travelers" name="travelers" type="number" min="1" step="1" required></div>
+        <div class="quote-field"><label for="budget">Total travel budget (USD) <span aria-hidden="true">*</span></label><input id="budget" name="budget-usd" type="number" min="0" step="100" inputmode="decimal" placeholder="e.g. 5000" required><span class="quote-help">Enter the total budget for everyone traveling.</span></div>
+        <div class="quote-field full"><label for="details">Additional details</label><textarea id="details" name="additional-details" placeholder="Travel dates, special accommodations, celebrations, or anything else you’d like me to know"></textarea></div>
+      </div>
+      <div class="quote-captcha" data-netlify-recaptcha="true" aria-label="Spam protection verification"></div>
+      <button class="button quote-submit" type="submit">Send my quote request ↗</button>
+      <p class="quote-privacy">Your details will be used to help plan your requested vacation. Please don’t include payment or card information here.</p>
+    </form></div></section>
+  </main>
+  <footer><div class="wrap footer-row"><a class="footer-brand" href="index.html"><img src="https://d6ham14n5a27z.cloudfront.net/img/s_h100/i_ha0764b0eef81c5c4796b85fe0e1fa16772dd50e7.png" alt=""><span><strong>The Motley Guide LLC</strong><small>Travel, made personal</small></span></a><a href="index.html">Return to home</a></div></footer>
+</body>
+</html>
